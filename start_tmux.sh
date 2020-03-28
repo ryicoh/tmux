@@ -2,6 +2,12 @@
 
 alias tmux="tmux -f ~/.tmux/tmux.conf"
 
+tpm_dir=~/.tmux/plugins/tpm
+
+if [ ! -d $tpm_dir ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
 stty werase undef
 bind '"\C-w": unix-filename-rubout'
 
