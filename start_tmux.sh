@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias tmux="tmux -f ~/.tmux/tmux.conf"
+alias tmux="tmux -u -f ~/.tmux/tmux.conf"
 
 tpm_dir=~/.tmux/plugins/tpm
 
